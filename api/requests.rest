@@ -1,0 +1,16 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+    "text":"Wakeup early"
+}
+
+###
+DELETE http://localhost:3001/todo/delete/64da2d0aa64e45e43543dd80
+
+###
+PUT http://localhost:3001/todo/update/64da2b667d306b7dcc79d6a0
