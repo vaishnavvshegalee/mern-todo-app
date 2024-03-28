@@ -8,10 +8,7 @@ app.use(cors());
 
 // Connecting to db
 mongoose
-  .connect("mongodb://127.0.0.1:27017/mern-todo", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect("mongodb://127.0.0.1:27017/mern-todo")
   .then(() => console.log("Connected to DB"))
   .catch((error) => console.error("Error connecting to DB:", error));
 
